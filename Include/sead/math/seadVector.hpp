@@ -68,12 +68,6 @@ inline Vector3<T>::Vector3(T x_, T y_, T z_)
 }
 
 template <typename T>
-inline Vector3<T>::Vector3(const Vector3<T>& other)
-{
-    Vector3CalcCtr<T>::set(*this, other);
-}
-
-template <typename T>
 inline Vector3<T>& Vector3<T>::operator=(const Vector3<T>& other)
 {
     Vector3CalcCtr<T>::set(*this, other);

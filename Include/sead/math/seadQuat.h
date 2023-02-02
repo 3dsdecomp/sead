@@ -14,17 +14,7 @@ private:
 
 public:
     Quat() { }
-    Quat(const Quat& other) {};
     Quat(T w, T x, T y, T z);
-
-    Quat& operator=(const Quat& other)
-    {
-        this->w = other.w;
-        this->x = other.x;
-        this->y = other.y;
-        this->z = other.z;
-        return *this;
-    }
 
     friend Quat operator*(const Quat& a, T t)
     {

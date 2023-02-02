@@ -68,7 +68,6 @@ struct Vector3 : public Policies<T>::Vec3Base {
 
     /// @warning This constructor leaves member variables uninitialized.
     Vector3() { }
-    Vector3(const Vector3& other);
     Vector3(T x, T y, T z);
 
     Vector3& operator=(const Vector3& other);
